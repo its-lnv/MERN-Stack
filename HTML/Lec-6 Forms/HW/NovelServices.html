@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Services Login</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Novell Services Login</h1>
+    <div>
+        <table>
+
+            <form action="afterSubmit.html">
+
+                <tr>
+                    <td>
+                        <label for="username">Username:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="username" placeholder="Enter username" name="username" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+
+                    <td>
+                        <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="city">City of Employment:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="city" placeholder="Enter city" name="city" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="server">Web server:</label>
+                    </td>
+
+                    <td>
+                        <select name="server" id="server">
+                            <option value="default">--Choose a Server--</option>
+                            <option value="frontend">Front-End Server</option>
+                            <option value="backend">Back-End Server</option>
+                            <option value="db">Database</option>
+                        </select>
+                        <br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="admin">Please specify your role:</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" id="admin" name=" " required>
+                        <label for="admin">Admin</label>
+                        <br>
+
+                        <input type="radio" id="engineer" name="role" required>
+                        <label for="engineer">Engineer</label>
+                        <br>
+
+                        <input type="radio" id="manager" name="role" required>
+                        <label for="manager">Manager</label>
+                        <br>
+
+                        <input type="radio" id="guest" name="role" required>
+                        <label for="guest">Guest</label>
+                        <br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Single Sign-on to the following:</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" id="mail" name="mail">
+                        <label for="mail">Mail</label>
+                        <br>
+
+                        <input type="checkbox" id="payroll" name="pay">
+                        <label for="payroll">Payroll</label>
+                        <br>
+
+                        <input type="checkbox" id="self" name="self">
+                        <label for="self">Self-service</label>
+                        <br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <div style="text-align: center;">
+                            <button type="submit">Login</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </td>
+                </tr>
+
+            </form>
+        </table>
+
+    </div>
+</body>
+
+</html>

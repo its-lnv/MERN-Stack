@@ -1,0 +1,75 @@
+===> Version Control System: Ispe hum user ke through codes me hue changes ko track kar sakte hai
+
+===> 1. Centralized VCS: Isme ek central server (computer) hota hai jispe code store hota hai aur jo changes hote hai users dwara woh
+central server pe hee hote hai aur ye online chalta hai aur agar server hee down ho jaye toh users changes nhi kr payenge. Ye VCS aur code sharing ek hee server pe manage krta hai
+
+===> 2. Distributed VCS: Isme ek server cloud hota hai aur users apne local computer pe DVCS install krke usse offline v chala sakte hai. Isme users apne local system pe kaam karke cloud pe push kar deta hai jaha se dusre users uss code ko use kr sakte hai. Isme VCS local machine pe  hota hai aur code sharing cloud pe
+
+===> Git: Ye DVCS hai (ye code ke versions ki history maintain krta hai)
+
+<!-- Commands--->
+
+For creation:
+touch <file_name>
+mkdir <folder_name>
+
+For deletion:
+rm <file_name>
+rm -rf <folder_name>
+
+ls : To see all files and folders
+ls -a or ls -la : To see all files and folers including hidden files and folder
+cat <file_name> : To see content of a file in terminal
+cd <folder_name> : To go inside a folder
+pwd : To see the path of current file/folder
+cd ../.. : To go back to folder here {..} means 1 folder back and {/} is used to separe b/w to folders
+
+<!-- Git -->
+
+To setup git:
+git config --global user.name "Name"
+git config --global user.email "Email"
+
+To check git:
+git config --global user.name
+git config --global user.email
+
+
+To track version/history of code: git init
+===> .git is created ---> it contains all history and version
+
+To check status of whole folder: git status
+
+To stage(Add) file: git add <file_name>
+To stage all files: git add .   
+
+To unstage (Untrack) file : git rm --cached <file_name>
+To unstage all files at once: git rm -r --cached .
+
+To commit: git commit -m "Message"
+
+To see history of changes made: git log
+To see history of changes made in short: git log --oneline
+
+To see what code is added in commit: git show <id>
+
+===> .env is used to store sensitive data
+
+
+===> GitHub: Online cloud platform hai jo source-code ko host (store) karta hai
+
+<!-- GitHub -->
+
+To connect github repo with git : git remote add origin <url>
+To change current url with another : git remote set-url origin <url>
+
+===> Here origin is just a random name of the url
+
+To verify if they're connected : git remote -v
+
+To change the branch name : git branch -M main/master
+
+To push source-code only first time : git push -u origin main
+Pushing code again : git push origin main
+
+To clone code : git clone <url> .

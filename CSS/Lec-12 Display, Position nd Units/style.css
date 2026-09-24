@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* h1{
+    border: 1px solid lightcoral;
+    width: 500px;
+    height: 100px;
+    margin: 10px 10px;
+} */
+
+/* span{
+    display: inline-block;
+    border: 1px solid blue;
+    width: 60px;
+    height: 100px;
+    margin-left: 20px;
+
+    position: relative;
+    left: 500px;
+    bottom: 110px;
+    
+} */
+
+/* p{
+    border: 1px solid red;
+    display: none;
+    visibility: hidden;
+} */
+
+.box{
+    display: inline-block;
+    border: 1px solid red;
+    background-color: greenyellow;
+    padding: 10px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    position: relative;
+}
+
+/* #close{
+    position: fixed;
+    top: 30px;
+    right: 100px;
+} */
+
+/* #box1{
+    position: sticky;
+    top: 40px;
+} */
+
+/* .boxes{
+    border: 5px solid gray;
+    height: 400px;
+} */
+
+/* #wrapper{
+    padding: 100px;
+    border: 20px solid blue;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+} */
+
+/* .cart{
+    border: 5px solid black;
+    position: relative;
+    z-index: -1;
+} */
+
+/* #item_no{
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    color: white;
+    width: 140px;
+    height: 140px;
+    font-size: 30px;
+    padding: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 420px;
+} */
+
+/* #box4{
+    position: relative;
+    left: 50px;
+    background-color: yellow;
+    z-index: -1;
+} */
+
+#box5{
+    position: relative;
+    z-index: -1;
+}
+
+/* Theory:
+====> display:hidden ---> sort of deletes the element
+====> visibility: none ---> hides the element
+====> Positions:
+1. Static ---> by default (normal flow (top to bottom)) ---> ye elements ke position ko yaha-waha karne aur absolute ke liye use hota hai
+2. Relative ---> isme ulta chalta hai right ka left, top ka bottom and vice versa
+3. Absolute ---> iske wajah se element apne normal flow se bahar aa jaata hai aur ye kis area me rahega woh iske parent pe depend karta hai
+4. Fixed ---> scroll karne pe remove nahi hota ye ek hee jagah fix ho jaata hai aur normal flow se bahar v aa jata hai (Ex- ads on websites)
+5. Sticky ---> apne parent tak scroll hoga aur fix rahega aur apna normal flow nahi chhorega
+
+====> Bottom:40px ---> niche se 40px upar ki or (viewport ke bottom se)
+====> z-index: layers ko aage piche karne ke liye use hota hai aur static ko chhorkar saare positions pe kaam karta hai
+====> agar kisi chiz ko position ki help se stretch karna hai toh width aur height nahi honi chahiye
+
+====> min ya max width tabhi kaam karta hai jab width fix na ho
+*/

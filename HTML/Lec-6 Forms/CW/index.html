@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tag</title>
+</head>
+
+<body>
+    <a href="https://instagram.com" target="_blank">Click Here</a>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms CW</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <div>
+        <form action="afterSubmit.html" target="_blank">
+
+            <fieldset>
+            <legend>Enter details</legend>
+            <label for="fullName">Full Name :</label>
+            <input type="text" id="fullName" placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <br><br>
+
+            <label for="password">Password :</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <label for="checkbox">I'm 18+ </label>
+            <input type="checkbox" id="checkbox" required>
+            <br><br>
+
+            <label for="phone">Phone Number : </label>
+            <input type="number" id="phone" placeholder="Enter mobile number" required min="0">
+            <br><br>
+
+            <label for="gender">Gender :</label>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="gender" required>
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="gender" required>
+            <br><br>
+
+            <label for="birthday">DOB : </label>
+            <input type="date" id="birthday" required>
+            <br><br>
+
+            <label for="foto">Upload Pic :</label>
+            <input type="file" id="foto">
+            <br><br>
+
+            <label for="state">State :</label>
+            <select name="state" id="state">
+                <option value="up">UP</option>
+                <option value="uk">UK</option>
+                <option value="bihar" selected>Bihar</option>
+                <option value="jk">JK</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="wb">WB</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Submit Form</button>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- Theory:
+====> name tag me daala gya word agar common ho toh ek ko click karne pe dusra hatt jayega
+====> value in option tag is for backend to connect it with frontend
+====> selected tag is used to display default state
+-->
+

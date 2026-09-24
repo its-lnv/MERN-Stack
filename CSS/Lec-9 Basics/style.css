@@ -1,0 +1,112 @@
+span{
+    color: purple;
+}
+
+/* Element selector */
+a, li{
+    color: brown;
+}
+
+/* Class selector */
+.aamras{
+    color: chartreuse;
+}
+
+/* Id selector */
+#sikh{
+    color: blanchedalmond;
+}
+
+/* Universal selector */
+*{
+    color: deeppink;
+}
+
+/* Descendant combinator */
+div p{
+    color: blue;
+}
+
+/* Child combinator */
+div > p{
+    color: blue;
+}
+
+/* Ajacent sibling combinato */
+a + p {
+    color: orangered;
+}
+
+/* General sibling combinator */
+a ~ p {
+    color: rgb(216, 10, 230);
+}
+
+/* Pseudo Class */
+p:hover{
+    background-color: rgb(180, 213, 10);
+}
+
+li:first-child{
+    color: rgb(229, 64, 5);
+}
+
+li:last-child{
+    color: rgb(229, 64, 5);
+}
+
+li:nth-child(2n){
+    color: rgb(229, 64, 5);
+}
+
+/* Pseudo element */
+h1::after{
+    content: " ji";
+}
+
+h1::first-letter{
+    color: greenyellow;
+}
+
+h1::selection{
+    color: black;
+    background-color: chartreuse;
+}
+
+/* 
+====> There are three types of using CSS:
+1. Inline CSS - Used inside an element using "style" attribute
+2. Internal CSS - Used isnide head tag with the help of style tag
+3. External CSS - We create a external CSS file
+
+====> Link tag is used to use css code in html
+====> selectors syntax: selector{property:value;} --> selectors tags ko select karne ke liye use hote hai
+====> Types:
+1. Element selector
+2. Class selector
+3. Id selector ----> mainly used for js
+4. Universal selector
+
+====> class tab use hota hai jab different tags ko same property deni ho
+====> id unique hota hai aur ek specific tag ke liye hee use hota hai agar ek baar p ke liye use kar lia hai toh dobara kisi tag ke liye use nahi karenge
+====> Selector precedence: inline css > id selector > class selector > element selector > Universal selector
+====> combinators: elements ke bich relation ke liye use hota hai
+====> Types:
+1. Descendant Combiantor ---> parent element ke andar jitne bhi elements hai unn sabpe property apply hoga including nested elements
+2. Child combinator ---> parent element ke anadar jitne child elements hai sirf unhi pe property apply hoga na ki nested elements pe
+3. Ajacent sibling combinator ---> ye keval apne paas wale element pe property apply krta hai
+4. General sibling combinator ---> ye apne paas wale same elements ke tags ke property pe apply hota hai
+
+pseudo class ---> poore element pe changes karna ===> syntax ===> selector:pseudo class{property:value}
+pseudo element ---> element ke content ke part ko style karna ===> syntax ===> selector::pseudo-element{property:value}
+
+====> :nth-child ----> agar koi div hai jisme bahot saare elements hai unme se kisi ek ko select karne ke liye
+====> :nth-of-type ----> agar koi div hai jisme 3 same tags hai (For ex- p tag) toh specifically ussi tag ko select karne k liye use hota hai
+
+====> agar hum p:nth-child(2) likhte hai to ye p ke andar ke dusre element ko select karega
+jabki p:nth-last-of-type(2) dusre p tag ko select karega
+
+====> attribute selector: css me kisi element ko select karne ke liye html me diye gaye attribute ko select karo
+For ex- html me mujhe h2 select karke uspe css lagana hai aur uspe ek attribute hai toh hum usko aise likh denge:
+====> h2[attribute = "uski value"]
+*/

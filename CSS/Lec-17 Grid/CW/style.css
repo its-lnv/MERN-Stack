@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#grid-container {
+    display: grid;
+    width: 50vw;
+    /* width: 1000px; */
+    min-height: 50vh;
+    /* height: 500px; */
+    /* min-height: auto; */
+    margin: auto;
+    border: 3px solid red;
+    /* grid-template-columns: 100px 2000px 150px ; */
+    /* grid-template-columns: 60% 20% 20% ; */
+    /* gap: 10px; */
+    /* row-gap: 10px; */
+    /* column-gap: 30px; */
+    gap: 10px 30px;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-rows: 100px 200px; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: repeat(4, 1fr); */
+    
+    /* grid-auto-rows: 2fr; */
+    grid-auto-rows: minmax(100px, 2fr);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+
+.grid-items {
+    background-color: aquamarine;
+    border: 1px solid black;
+    /* height: 100px; */
+    display: grid;
+    place-items: center;
+}
+
+/* Theory:
+====> Grid: 2d layout hota hai jisme rows aur columns saath me use hote hai
+====> row lines = row + 1 
+====> grid-template-columns: kitne cols chahiye aur each col ka kya size hoga
+====> gap shorthand: gap: 10px 20px  ---> 10px will be applied on row and 20px will be applied on col
+====> fr: fractional ratio
+====> repeat function syntax---> grid-template-rows: repeat (kitni baar, size)
+
+====> agar bahot saare items hue aur height fix hai toh items container ki wajah se katt jayenge isliye isko hatane ke liye grid-auto-rows use karte hai
+====> upar wale tarike se box katenge toh nahi par woh pichak jayenge aur isko fix karne ke liye hum minmax use karte hai jisse woh scrollable ho jaata hai
+====> minmax (min value in px, max value in fr) ---> screen chhoti karne pe items ka size v chhota na ho isliye px aur chhoti karne pe responsive ho isliye fr. dono ka combo minmax
+====> Ex- agar hum height container ka 100vh lete hai aur agar 5 items hai aur humne grid-auto-rows me 1fr le lia toh ye poor container ki height toh le lega par future me jab items badhenge toh toh ye pichak jyega
+aur yhi agr px me hota toh ye scrollable bnn jaata bahot items ke hone par but agar bas 5 items hee hote toh container me thoda height bach jata isliye hum dono ka combination minmax use kaarte hai
+
+====> ab problem aati hai ki screen ke hisaab se cols dikhai de yani ki agar screen bada hai toh jyada cols aur kam hai toh kam cols
+aur iske liye hum autofill aur autofit use karte hai
+====> autofill: ye desktop ke size ke hisaab se col banata hai. agar 2 item ho par screen pe 4 col bann sakte hai toh ye 4 cols banake 2 cols me items bhar dega aur baaki do chhor dega
+====> autofit: ye 4 cols me 2 items ke size ko badhake bhar deta hai
+/*

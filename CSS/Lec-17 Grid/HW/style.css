@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.green {
+    background-color: rgb(92, 186, 20);
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.79);
+}
+
+.yellow {
+    background-color: rgba(255, 153, 0, 0.78);
+}
+
+#grid-container1 {
+    width: 50vw;
+    min-height: 50vh;
+    margin: auto;
+    border: 3px solid blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* place-items: center; */
+    /* place-content: center; */
+    /* align-items: center; */
+}
+
+.grid-itemsx{
+    display: grid;
+    place-items: center;
+}
+
+#item1x {
+    grid-row: 1/4;
+    /* align-self: center;
+    justify-self: center; */
+}
+
+#item2x {
+    grid-column: 2/4;
+}
+
+#item6x {
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+
+#grid-container2 {
+    width: 50vw;
+    min-height: 50vh;
+    margin: auto;
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+}
+
+.grid-items {
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#item1 {
+    grid-column: 1/4;
+}
+
+#item2 {
+    grid-row: 2/4;
+}
+
+#item7 {
+    /* grid-column: 1/4; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Theory:
+====> to expand any col, grid-column is used aur ye child pe lagti hai isme col-lines ki value paas karte hai
+
+Dono parent pe use hote hai
+====> place-items: ye container me saare cells/item ko position karta hai
+====> place-content: ye container me poore grid ko position karta hai
+
+Ye child pe kaam karta hai
+====> align-items: ye kisi ek partuclar cell ko horizontally position (row-wise) karne ka kaam karta hai
+====> justify-self: ye kisi ek partuclar cell ko vertically position (col-wise) karne ka kaam karta hai
+*/

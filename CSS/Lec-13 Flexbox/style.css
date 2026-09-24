@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    border: 5px solid red;
+    flex-direction: row;
+    height: 50vh;
+    /* width: 100vw; */
+    /* justify-content: center; */
+    justify-content: start;
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* align-items: start; */
+    /* align-items: end; */
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    padding-left: 20px;
+
+    /* align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+    align-content: center; */
+
+}
+
+.item{
+    /* width: 100px;
+    height: 100px; */
+    background-color: chocolate;
+    border: 1px solid black;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+    /* flex-basis: 200px; */
+    /* flex: 1; */
+    /* flex: 1 1 200px; */
+}
+
+.class3{
+    /* align-self: end; */
+    flex-shrink: 1;
+}
+
+/* Theory:
+===> Flexbox: 1d layout system (if height and width is given)
+===> Flex direction: col/row/row-reverse/column-reverse
+===> flex direction == main axis and axis perpendicular to main is cross axis
+===> jsutify-content: works on main axis
+===> align-items: works on cross axis
+===> justify-content: space-around: gives equal spaces around items
+===> jsutify-content: space-between: gives equal spaces b/w 2 items
+===> jsutify-content: space-evenly: gives equal spaces around items on both sides
+===> align-items: for single row
+===> align-content: for multiple rows or cols
+===> wrap: agar width kam hai toh text/item niche aa jayega
+===> flex-grow, flex-shrink aur flex-basis child pe lagti hai
+===> flex-grow: apne parent container me bache hue space ko occupy karne ke liye items apni size badha lenge
+default value: 1
+===> flex-shrink: width ghatane pe ye uske hisab se items ki width ghahtti hai
+default-value: 1
+===> flex-basis: ye sabhi item/items ko ek starting (temporary width ki agar width nahi hai toh ye le lo) width dene ke liye use hota hai
+===> flex shorthand
+flex: grow shrink basis
+Ex = flex: 1 (grow = 1, shrink = 1, basis = 0) ---> parent must be display : flex
+===> gap: gives space on the child of a parent container
+
+===> flex is donated by purple lines
+*/

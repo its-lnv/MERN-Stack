@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.wrapper {
+    background-color: rosybrown;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.wrapper div:first-child {
+    flex: 2;
+}
+
+.wrapper div:last-child {
+    flex: 1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: clamp(1.4rem, 5vw, 4rem);
+}
+ 
+/* tablet */
+@media (min-width : 768px) {
+    .wrapper {
+        background-color: yellow;
+        /* font-size: 3rem; */
+        flex-direction: row;
+    }
+}
+
+/* @media (min-width: 576px) and (max-width: 700px) {
+    .wrapper {
+        background-color: tomato
+    }
+} */
+
+
+
+/* Theory:
+====> Responsiveness: Website can adjust all the available screens without breaking
+====> Media Queries: Kis width par konsi CSS property chahiye
+====> Min-width: kam se kam 580px toh width chahiye hee, usse jyada chalega par kam nahi (580px se upar rahega tabhi koi property apply hoga usse kam pe nahi) ---> kaha se start hoga
+====> Max-width: koi chiz 580px tak ya usse niche tak hee apply karna usse jyada nhi krna ---> kaha tak apply hoga
+====> Clamp: It is used to make texts responsive. Syntax:  clamp(min, preferred, max)
+====> website do type se bante hai pehla mobile-first ---> isme mobile se website banana use karte hai aur uske baad uske upar ke devices (jaise Tablet, Laptop) k liye banate hai aur isme min-width ka use karte hai
+====> dusra desktop-first ---> isme pehle desktop k liye banate hai hai usse chhote devices ke liye aur isme max-width ka use karte hai
+*/

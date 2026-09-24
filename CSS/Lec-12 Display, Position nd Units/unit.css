@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 500px;
+    width: 500px;
+    width: 50%;
+    height: 50%;
+    width: 100vw;
+    height: 100vh;
+    background-color: teal;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+section{
+    width: 250px;
+    height: 250px;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+section{
+    font-size: 5rem;
+}
+
+p{
+    font-size: 5rem;
+}
+
+html{
+    font-size: 20px;
+}
+
+/* Theory:
+====> Units
+1. Absolute: same on all devices (Ex- px, cm, mm, m, inch)
+2. Relative:  (Ex- %, vh, vw, em, rem)
+
+====> em: apne parent ka size leta hai
+*/

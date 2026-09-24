@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: rgb(14, 14, 15);
+    margin: 40px;
+}
+
+#wrapper{
+    color: #ffffff;
+    background: linear-gradient(to left, red, blue);
+    background: linear-gradient(45deg, red, blue, yellow, pink, green);
+    height: 500px;
+    width: 1000px;
+    border: 1px solid black;
+    background: radial-gradient(blue, pink);
+    background-image: conic-gradient(red, yellow, green);
+    background-image: url(laxmi.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    border-width: 10px;
+    border-style: groove;
+    border-color: black;
+            /*  or */
+    border: 10px dotted blue;
+
+    border-top: 5px dotted blue;
+    border-radius: 50px;
+    border-top-left-radius: 12px;
+
+    padding: 40px;
+
+    margin-left: 40px;
+}
+
+.red-border{
+    border: 2px solid red;
+}
+
+p{
+    
+    padding: 10px;
+    
+}
+
+#daizy{
+    text-align: center;
+    
+}
+
+#helo{
+    text-align: center;
+    width: 60px;
+    margin: auto;
+}
+
+span{
+    display: inline-block;
+    width: 50px;
+    margin: auto;
+    height: 40px;
+}
+
+#bholu{
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+/* Theory:
+====> Gradient: Smooth change of one color to other
+====> Types:
+1. Linear Gradient: Linear direction shift of one color to other
+Syntax: linear-gradient(direction (ex- to top or 70deg), color)
+2. Radial Gradient: change of colors in eclipse form (circle)
+3. Conic Gradient: looks like top of the cone
+
+====> Background-size
+1. Contain: Jitna image hai woh border me aa jaye
+2. Cover: Poore border me aa jayega aur crop bhi ho sakta hai
+
+====> Padding: Space b/w border and content
+====> Syntax= padding: 40px or padding: top_px right_px bottom_px left_px
+or padding: top/bottom left/right or padding: top left/right bottom
+
+====> Margin: space b/w elements
+====> Margin:auto is used to center the element in horizontal direction only
+====> padding is denoted by green color 
+
+====> box-shadow: x-direction y-direction blur color
+*/

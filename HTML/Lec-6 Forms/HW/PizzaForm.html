@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Pete's Pizza Delivery</h1>
+    <h2 style="text-align: center;">Online Order Form</h2>
+    <p style="text-align: center;"><b>* </b>required field</p>
+    <div>
+        <form action="afterSubmit.html">
+
+            <fieldset>
+                <legend><b>Customer details</b></legend>
+
+                <table>
+                    <tr>
+                        <td><label for="name">*Name:</label></td>
+                        <td><input type="text" id="name" placeholder="Enter your name" name="yourName" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="address">*Address:</label></td>
+                        <td><input type="text" id="address" placeholder="Enter address" name="address" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="city">*Town/City:</label></td>
+                        <td><input type="text" id="city" placeholder="Enter city" name="city" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="postcode">*Postcode:</label></td>
+                        <td><input type="number" id="postcode" placeholder="Enter postcode" name="postcode" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="number">*Tel:</label></td>
+                        <td><input type="tel" id="number" placeholder="Enter phone number" name="number" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">*Email:</label></td>
+                        <td><input type="email" id="email" placeholder="Enter email" name="email" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+
+            <table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Topping*</legend>
+
+                            <input type="radio" id="margherita" name="topping" required>
+                            <label for="margherita">Margherita</label>
+                            <br>
+
+                            <input type="radio" id="fourSeasons" name="topping" required>
+                            <label for="fourSeasons">Four Seasons</label>
+                            <br>
+
+                            <input type="radio" id="meatFeast" name="topping" required>
+                            <label for="meatFeast">Meat Feast</label>
+                            <br><br>
+
+                        </fieldset>
+                    </td>
+
+                    <td>
+                        <fieldset>
+                            <legend>Size*</legend>
+
+                            <input type="radio" id="small" name="size" required>
+                            <label for="small">Small</label>
+                            <br>
+
+                            <input type="radio" id="medium" name="size" required>
+                            <label for="medium">Medium</label>
+                            <br>
+
+                            <input type="radio" id="large" name="size" required>
+                            <label for="large">Large</label>
+                            <br><br>
+
+                        </fieldset>
+                    </td>
+
+                    <td>
+                        <fieldset>
+                            <legend>Extras</legend>
+
+                            <input type="checkbox" id="mushroom" name="mushroom">
+                            <label for="mushroom">Mushrooms</label>
+                            <br>
+
+                            <input type="checkbox" id="peppers" name="peppers">
+                            <label for="peppers">Green Peppers</label>
+                            <br>
+
+                            <input type="checkbox" id="anchovies" name="anchovies">
+                            <label for="anchovies">Anchovies</label>
+                            <br>
+
+                            <input type="checkbox" id="cheese" name="cheese">
+                            <label for="cheese">Extra Cheese</label>
+                            <br><br>
+
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <fieldset>
+                <legend>Delivery</legend>
+
+                <label for="time">Preferred delivery time:</label>
+                <input type="time" id="time">
+                <br><br>
+
+                <label for="delivery">Delivery Instructions:</label>
+                <br>
+                <textarea name="instructions" id="delivery" rows="4" cols="40"></textarea>
+            </fieldset>
+            <br>
+
+            <div style="text-align: center;">
+                <button type="submit">Submit Order</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

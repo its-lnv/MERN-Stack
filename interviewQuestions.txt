@@ -1,0 +1,48 @@
+1. Diff b/w var, let and const:
+var => re-declaration and updation allowed
+let => re-declaration not allowed but updation allowed
+const => Both re-declaration and updation are not allowed
+
+
+2. Diff b/w while, for vs do-while:
+Agar condition false hoti hai toh for aur while nahi chalte jabki do-while ek baar toh zaroor chalta hai
+uske baad uska condition check hota hai
+
+
+3. JS me log function use karne pe undefned kyu aata hai:
+Kyuki log function sirf print karane ka kaam karta hai na ki kuch return karta hai
+
+
+4. Function declaration vs Function Expression:
+Function declaration me hum function declare karne se pehle bhi (upar) call kar sakte hai (because of hoisting) jabki hum function expression me aisa nahi kar sakte
+
+5. Map vs Filter vs Reduce:
+Maps => agar hum n length ka arr leke uske saare elements pe same operation perform karke n length ka hee arr return karna hai toh uske liye hum map use karte hai
+// Chaining: means using methods one after another
+Filter => ye n length ka arr leta hai aur 0-n length ka arr return karta hai aur iska use unwanted chizo ko filter out karne ke liye karte hai
+
+6. How JS execute internally 
+Execution Context: Ye ek environment hota hai jaha JS execute hoti hai.
+
+Ye do types ka hota hai
+(I) Global execution context: One time creation
+(II) Function execution context: Create on every function call
+
+Har type ke andar do phases hoti hai
+1. Creation phase: Isme memory creation/allocation hota hai. Isme bas variables declare hoti hai
+Ex- var a; let b; const c; function fun1() {}; var fun2 = function() {}; let fun3 = () => {};
+
+===> Memory allocation key:value format me hota hai
+
+(i) var a = 9;  ===> a:undefined (value is initialized with undefined in var)
+(ii) let b = 10; const c = 11;  ===> b:<value_unavailable>; c:<value_unavailable> (value is uninitialized in let/const)
+(iii) function fun1() {};  ===> fun1():{} (incase of fun declaration entire fun is stored in memory)
+(iv) var fun2 = function() {}; var fun2 = () => {};  ===> fun2:undefined (exactly same as var variable)
+(v) var fun3 = function() {}; var fun3 = () => {};  ===> fun3:<value_unavailable> (exactly same as let/const)
+
+2. Execution phase: Jo chize executable hoti hai
+Ex: Assigning values, calling function, evaluating expressions
+
+7. Var me memory allocation ke time by default undefined value assign ho jaati hai jabki let aur const me execution ke time value assign nahi hoti hai (value unavailable show hota hai) isliye let aur const hoisted hote hue v execution ke pehle access karne pe error dete hai
+
+8. Temporal Deadzone: Temporal Deadzone: Var creation(declaration) se lekar execution(initialization) tak ka time

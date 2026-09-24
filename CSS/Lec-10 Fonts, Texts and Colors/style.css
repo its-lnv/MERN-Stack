@@ -1,0 +1,75 @@
+#Nishant{
+    font-family: "Griffy", sans-serif;
+    
+}
+
+.large{
+    font-size: 100px;
+}
+
+#kimono{
+    font-size: 100px;
+    text-indent: 500px;
+    text-shadow: -3px -3px 10px blue;
+}
+
+p{
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 2; 
+    letter-spacing: -4px;
+    word-spacing: 40px;
+}
+
+#mam{
+    font-style: normal;
+    font-variant: small-caps;
+    text-decoration: underline wavy;
+    text-transform: capitalize;
+}
+
+#bottle{
+    text-align: center;
+}
+
+#ear{
+    text-align: center;
+}
+
+#mob{
+    text-align: right;
+    display: block;
+}
+
+#color{
+    color: aqua;
+    color: #00ff00;
+    color: rgb(100, 145, 143, 0.9);
+    color: hsl(360, 100%, 20%);
+}
+
+/* 
+====> Fonts: Appearance of texts
+====> Line-height: space between two lines
+====> Text-indent: pixel ke hisaab se text ko align karta hai (like text ko khiskana)
+====> Color Property:
+1. Named Colors
+2. HEX: 
+(i) Red (ii) Green (iii) Blue
+Values: 0-9, a-f
+Syntax= color: #  0-9 a-f       0-9 a-f         0-9 a-f
+Example:
+#000000
+#ffffff
+#ff0000
+#00ff00
+#0000ff
+
+<---- RGB/RGBA ---->
+Syntax= color: rgb (0-255, 0-255, 0-255, 0-1)
+====> A is Alpha Chanel and used for opacity
+
+3. HSL/HSLA
+Hue Saturation Lighting
+Syntax= color: hsl(0-360, 0-100%, 0-100%)
+*/

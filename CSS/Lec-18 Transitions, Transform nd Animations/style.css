@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    /* transition-duration: 2s;
+    transition-property: all; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease; */
+    /* transition-delay: 2s; */
+    transition: all 10s linear 0s;
+
+    /* transform: translateX(100px);
+    transform: translateY(100px); */
+    /* transform: translate(100px, 100px);3 */
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    /* animation-name: sneha; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: dhruv;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+    position: absolute;
+    
+}
+
+@keyframes sneha {
+    from {
+        background-color: rgb(225, 118, 11);
+    }
+
+    to {
+        background-color: greenyellow;
+        transform: translate(20px, 30px);
+    }
+}
+
+@keyframes dhruv {
+    0% {
+        background-color: rgb(225, 118, 11);
+        left: 0%;
+    }
+
+    25% {
+        background-color: darkslategray;
+    }
+
+    50% {
+        background-color: greenyellow;
+    }
+
+    75% {
+        background-color: firebrick;
+    }
+
+    100% {
+        background-color: lightcoral;
+        /* transform: translate(20px, 30px); */
+        left: 100%;
+    }
+}
+
+.container:hover div{
+    background-color: purple;
+    /* width: 1300px; */
+    /* transform: translate(100px, 100px);  */
+    /* transform: scale(3); */
+    /* transform: translate(300px, 300px) scale(2); */
+}
+
+/* .linear {
+    transition-timing-function: linear;
+    background-color: rgb(144, 38, 35);
+}
+.ease {
+    transition-timing-function: ease;
+    background-color: rgb(231, 86, 14);
+}
+.ease-in {
+    transition-timing-function: ease-in;
+    background-color: rgb(241, 10, 79);
+}
+.ease-out {
+    transition-timing-function: ease-out;
+    background-color: rgb(47, 169, 29);
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.11, 0.36, 0.11, 0.33);
+    transition-timing-function: elastic;
+    background-color: rgb(11, 189, 133);
+} */
+
+.btn {
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: hello 1s linear 0s infinite normal;
+}
+
+@keyframes hello {
+    from {
+    }
+
+    to {
+        /* transform: translate(0, -5px) scale(1.05) rotate(3deg); */
+        transform: rotate(360deg);
+        background-color: red;
+    }
+}
+
+/* .btn:hover {
+    transform: translate(0, -5px) scale(1.05) rotate(3deg);
+    transition-duration: 0.5s;
+    box-shadow: 0 3px 10px black;
+} */
+
+
+/* Theory:
+====> Transition: ek property value se dusre property value me smoothly change hona
+====> transition tab lagti hai jab user koi action krta hai
+isme do states hote hai origin state and changed state
+====> transition-duration: kitni der me ek property se dusre property me change hoga (kitne der me hoga)
+====> 1s = 1000ms
+====> transition-property: kispe lagana chahte ho yani ki css ki kis property pe apply krna chahte ho (default : all)
+inko parent me use karte hai jisse item pe se cursor hatane k baad v transition ke saath hee woh undo ho
+====> transition-timing-function: speed of transition
+1. linear: same speed across all transition (Ex- ek car start hui 3km/s ki speed se chali bhi utne hee speed se aur destination pe bhi utne hee speed se pahoch gayi)
+2. ease-in: initially speed kam hoti hai par baad me jakar fast ho jayegi
+3. ease-out: initially fast, baad me normal
+4. ease-in-out: initially aur ending me slow but bich me fast
+5. ease: sabse fast
+====> transition-delay: kitna late transition start hoga (kitne time baad hoga)
+====> transition shorthand ---> transition: property duration timing-function delay
+
+====> Transform: scale change, move, rotate
+1. traslate: kisi direction me khiskana
+2. scale: bada karna
+3. rotate: ghumane k liye
+====> isme hum trasnlate aur scale dono ek saath use kar sakte hai using shorthand---> transform: translate scale
+
+====> Animation: ye bina user k hota hai
+====> keyframes: steps
+====> iteration-count: kitni baar animation hoga
+====> direction: animation kis direction se start ho
+1. normal: 0 ---> 100
+2. reverse: 100 ---> 0
+3. alternate: 0 ---> 100 and 100 ---> 0
+====> fill-mode: animation kaha rukega
+*/
+
