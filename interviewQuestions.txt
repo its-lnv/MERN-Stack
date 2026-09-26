@@ -40,9 +40,21 @@ Ex- var a; let b; const c; function fun1() {}; var fun2 = function() {}; let fun
 (iv) var fun2 = function() {}; var fun2 = () => {};  ===> fun2:undefined (exactly same as var variable)
 (v) var fun3 = function() {}; var fun3 = () => {};  ===> fun3:<value_unavailable> (exactly same as let/const)
 
-2. Execution phase: Jo chize executable hoti hai
+2. Execution phase: Jo chize executable hoti hai (ye top se bottom hoti hai)
 Ex: Assigning values, calling function, evaluating expressions
 
 7. Var me memory allocation ke time by default undefined value assign ho jaati hai jabki let aur const me execution ke time value assign nahi hoti hai (value unavailable show hota hai) isliye let aur const hoisted hote hue v execution ke pehle access karne pe error dete hai
 
 8. Temporal Deadzone: Temporal Deadzone: Var creation(declaration) se lekar execution(initialization) tak ka time
+
+9. Closures: A function that remembers its outer/parent scope variables
+Ex- function outer (){
+    const a = 5;
+    function inner() {
+        console.log(a);
+    }
+    return inner;
+}
+
+const response = outer()
+response();

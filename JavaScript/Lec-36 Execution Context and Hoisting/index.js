@@ -11,10 +11,10 @@
 //     console.log("Function 1");
 // };
 
-// fun2();  // not a function ==> kyuki yaha pe fun2:undefined hogi aur hum fun call me undefined() ko call kar rahe hai aur chuki undefined fun nahi hai isliye type error aayega
-// var fun2 = function() {
-//     console.log("Function 2");
-// }
+fun2();  // not a function ==> kyuki yaha pe fun2:undefined hogi aur hum fun call me undefined() ko call kar rahe hai aur chuki undefined fun nahi hai isliye type error aayega
+var fun2 = function() {
+    console.log("Function 2");
+}
 
 // fun3();  //cannot access before initialization ==> kyuki let/const me hum TDZ ke wajah se initialization se pehle value print nahi kar sakte
 // const fun3 = function() { 
@@ -46,7 +46,7 @@ Ex- var a; let b; const c; function fun1() {}; var fun2 = function() {}; let fun
 5. var fun3 = function() {}; var fun3 = () => {};  ===> fun3:<value_unavailable> (exactly same as let/const)
 
 
-2. Execution phase: Jo chize executable hoti hai
+2. Execution phase: Jo chize executable hoti hai (ye top se bottom hoti hai)
 Ex: Assigning values, calling function, evaluating expressions
 */
 
@@ -91,8 +91,8 @@ Jaise jaise function call hona start hota hai stack me push hote hai aur values 
 */
 
 
-function recurse() {
-    recurse()
-}
+// function recurse() {
+//     recurse()
+// }
 
-recurse()
+// recurse()
