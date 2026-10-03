@@ -37,6 +37,7 @@ Attributes:
 1. setAttribute
 2. getAttribute
 3. removeAttribute
+4. contains
 */
 
 // p.setAttribute("style", "background-color: pink; font-size: 90px")
