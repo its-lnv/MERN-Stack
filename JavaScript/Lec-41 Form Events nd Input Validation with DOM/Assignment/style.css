@@ -1,0 +1,10 @@
+.hidden {
+    display: none;
+}
+
+.focus {
+    border: 1px solid red;
+    border-radius: 30px;
+    outline: none;
+    background-color: aqua;
+}

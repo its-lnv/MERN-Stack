@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="" id="form">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Enter your Name" id="username">
+            <br>
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="Enter your Email" id="email">
+            <br>
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" placeholder="Enter your Password" id="password">
+            <br>
+            <small class="hidden">Must be atleast 8 characters</small>
+            <br>
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="bio">Bio: </label>
+            <textarea name="bio" id="bio" placeholder="Text here..."></textarea>
+            <p id="char-count"></p>
+            <br>
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="country">Select your country: </label>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+            <br>
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I agree to Terms & Conditions</label>
+            <br>
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <br>
+
+        <button type="submit" id="btn">Login</button>
+    </form>
+
+    <h1 class="hidden">Account Created Successfully!!</h1>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
