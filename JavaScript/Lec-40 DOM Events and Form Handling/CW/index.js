@@ -155,6 +155,6 @@ productList.addEventListener('click', (e) => {
 
     // console.log(e.target.parentElement.dataset.id);
     
-    // console.log(e.target.closest(".mob"));  // ye apne paas wale given class ke saath parent ko dhundta hai
+    // console.log(e.target.closest(".mob"));  // ye apne parent ke andar jispe bhi given class applied hai usse dhundta hai
     
 })
