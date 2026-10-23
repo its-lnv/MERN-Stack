@@ -24,7 +24,7 @@ setInterval(cb func, timer) -> cb func again & again  timer ke base pe execute h
 
 // console.log("Task 2");
 
-const startTime = Date.now()
+// const startTime = Date.now()
 // while(Date.now() - startTime < 10000){}
 
 // console.log("Task 3");
@@ -101,4 +101,4 @@ setInterval(() => {
         color = color + colorStr[randomVal]
     }
     body.style.backgroundColor = `#${color}`
-}, 500)
+}, 0)
