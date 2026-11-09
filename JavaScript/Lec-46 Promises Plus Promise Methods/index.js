@@ -126,5 +126,4 @@ searchPizza()
         console.log("Pizza bss aa hee raha hai");
     }).catch(function (err) {
         console.log(err);
-
     })

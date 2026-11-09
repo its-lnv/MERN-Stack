@@ -101,4 +101,4 @@ setInterval(() => {
         color = color + colorStr[randomVal]
     }
     body.style.backgroundColor = `#${color}`
-}, 0)
+}, 500)
