@@ -5,7 +5,7 @@ Async Function: We use async keyword to declare or define the async funcion and 
 Await: Await is how you consume the promise object or it eliminates the promise chain (await ka matlab hai wait karo and await async code ko handle karta hai like .then())
 ===> It can be used only inside async function
 ===> Await mean pausing without blocking
-
+===> ye waha use hota hai jaha koi promise return ho raha ho ya koi async task ho
 */
 
 // async function fun2() {

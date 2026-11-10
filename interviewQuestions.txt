@@ -58,3 +58,6 @@ Ex- function outer (){
 
 const response = outer()
 response();
+
+10.Local Storage: Local storage me data hamesha ke liye rehti hai jab tak hum usse clear naa kare
+Session Storage: Session storage me data per session (tabs) rehti hai. Tab close karte hee data khatam
