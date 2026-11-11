@@ -45,7 +45,7 @@ Ex: Assigning values, calling function, evaluating expressions
 
 7. Var me memory allocation ke time by default undefined value assign ho jaati hai jabki let aur const me execution ke time value assign nahi hoti hai (value unavailable show hota hai) isliye let aur const hoisted hote hue v execution ke pehle access karne pe error dete hai
 
-8. Temporal Deadzone: Temporal Deadzone: Var creation(declaration) se lekar execution(initialization) tak ka time
+8. Temporal Deadzone: Var creation(declaration) se lekar execution(initialization) tak ka time
 
 9. Closures: A function that remembers its outer/parent scope variables
 Ex- function outer (){
